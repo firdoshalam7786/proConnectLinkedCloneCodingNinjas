@@ -1,0 +1,83 @@
+POST http://localhost:9090/register
+Content-Type: application/json
+
+{
+  "username": "samar143",
+  "password": "sam",
+  "email": "samar@example.com",
+  "name": "Samar Khan"
+}
+ 
+###
+POST http://localhost:9090/register
+Content-Type: application/json
+
+{
+  "username": "firdosh123",
+  "password": "firdosh123",
+  "email": "firdosh@example.com",
+  "name": "Firdosh Alam"
+}
+
+
+###
+
+
+POST http://localhost:9090/login
+Content-Type: application/json
+
+{
+  "email": "samar@example.com",
+  "password": "sam"
+}
+
+###
+POST http://localhost:9090/login
+Content-Type: application/json
+
+{
+  "email": "firdosh@example.com",
+  "password": "mypassword"
+}
+
+
+###
+
+GET http://localhost:9090/get_user_and_profile
+Content-Type: application/json
+
+{
+   "token":"0cd939c1d515613827d7ad2c2becdf4b55db59b05072eb0371f157497e6127ae"
+}
+
+
+###
+
+POST http://localhost:9090/user_profile_data
+Content-Type: application/json
+
+{
+  "token": "69e08613f40dfbd2385a42ef99b27d5aab070f91507c42304675b6ec8a0cde30",
+  "bio":"This bio for samar bhai",
+  "currentPost": "CTO",
+  "postWork":[
+    {
+      "company":"Microsoft",
+      "position":"CTO",
+      "years":"2+"
+
+    }
+  ],
+  "education":[
+    {
+      "school":"IIT",
+      "degree":"B.Tech",
+      "fieldOfStudy":"2015-2019"
+    }
+  ]
+}
+
+###
+GET http://localhost:9090/user/get_all_users
+
+
