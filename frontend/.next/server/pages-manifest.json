@@ -1,8 +1,15 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/login": "pages/login.js",
-  "/dashboard": "pages/dashboard.js"
+  "/api/hello": "pages/api/hello.js",
+  "/blogs": "pages/blogs.html",
+  "/dashboard": "pages/dashboard.html",
+  "/discover": "pages/discover.html",
+  "/": "pages/index.html",
+  "/login": "pages/login.html",
+  "/my_connections": "pages/my_connections.html",
+  "/profile": "pages/profile.html",
+  "/_error": "pages/_error.js",
+  "/view_profile/[username]": "pages/view_profile/[username].js",
+  "/404": "pages/404.html"
 }
