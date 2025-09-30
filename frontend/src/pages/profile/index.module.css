@@ -1,0 +1,192 @@
+.container{
+    padding: 1.3rem;
+    background: rgb(246, 244, 244);
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.backDropContainer{
+    width: 100%;
+    height: 30vh;
+    background: url(https://images.pexels.com/photos/13216333/pexels-photo-13216333.jpeg?_gl=1*cnixw9*_ga*NDM1MzE2Mzk3LjE3NTg4MzQwNjk.*_ga_8JE65Q40S6*czE3NTg4MzQwNjgkbzEkZzEkdDE3NTg4MzQxNjMkajI1JGwwJGgw);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+
+.backDropContainer img{
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left: 8%;
+    text-align: center;
+
+}
+
+.profileContainer_details{
+    padding-top: 6.6rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.card_profileContainer{
+    display: flex;
+}
+
+.card_profileContainer>img{
+    width: 3.4rem;
+    height: auto;
+    height: 3.4rem;
+    object-fit: cover;
+}
+
+.backDrop_overlay{
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left: 8%;
+    text-align: center;
+    z-index: 4;
+    transition: all 0.6s;
+    cursor: pointer;
+    color: white;
+    opacity: 0.0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backDrop_overlay:hover{
+   opacity: 0.7;
+   background: black;
+}
+
+
+.connectBtn{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgb(3, 93, 183, 0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.connectedButton{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgba(72, 48, 9, 0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.workHistoryContainer{
+  display: flex; 
+  gap: 1.4rem;
+  padding-top: 1.4rem;
+  width: 100%;
+  flex-wrap: wrap; 
+}
+
+.workHistoryCard{
+    min-width: fit-content;
+    padding-inline: 2.5rem;
+    padding-block: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(173, 173, 173);
+}
+
+.profileContainer_details input{
+    outline: none;
+    border-style: none;
+    padding-inline: 10px;
+    padding-block: 9px;
+    width: fit-content;
+}
+
+.nameEdit{
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.updateProfileBtn{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    background: rgb(3, 93, 183, 0.905);
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.profileContainer_details textarea{
+    outline: none;
+    border: none;
+    padding-inline: 10px;
+    padding-block: 9px;
+    font-family: 'Poppins' !important;
+    font-size: 1.1rem;
+}
+
+.addWorkButton{
+    padding-inline: 1.3rem;
+    background: white;
+    border: 1px dotted silver;
+    border-radius: 10px;
+    padding-block: 1.2rem;
+    cursor: pointer;
+}
+
+/* comments styling */
+.commentsContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgb(0, 0, 0, 0.7);
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.allCommentsContainer{
+    width: 40vw;
+    height: fit-content;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.inputField{
+    padding-inline: 1.2rem;
+    padding-block: 0.8rem;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid silver;
+    width: 100%;
+}
