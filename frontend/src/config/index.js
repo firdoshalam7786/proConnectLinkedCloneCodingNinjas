@@ -1,10 +1,7 @@
 import axios from "axios";
 
-export const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
-if (!BASE_URL) {
-  console.error("Error: NEXT_PUBLIC_API_URL is not defined in environment variables.");
-}
+export const BASE_URL = "https://proconnectlinkedclonecodingninjas.onrender.com"
 
 const clientServer = axios.create({
   baseURL: BASE_URL,
@@ -13,4 +10,4 @@ const clientServer = axios.create({
   },
 });
 
-export default clientServer;
+export default clientServer; 

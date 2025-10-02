@@ -15,18 +15,14 @@ app.use(postRouter);
 app.use(userRoutes);
 app.use(express.static("uploads"))
 
-const PORT = process.env.PORT || 9090;
-
-const MONGO_URL =  "mongodb+srv://firdoshalam7996_db_user:RY5X7eRfEVga88rt@socialmediaapp.gxxwc3x.mongodb.net/socialMediaDB"
-
 const start = async () => {
   try {
     await mongoose.connect(
-      MONGO_URL
+      "mongodb+srv://firdoshalam7996_db_user:RY5X7eRfEVga88rt@socialmediaapp.gxxwc3x.mongodb.net/socialMediaDB"
     );
     console.log("✅ MongoDB connected");
 
-    app.listen(PORT, () => {
+    app.listen(9090, () => {
       console.log("🚀 Server is running on port 9090");
     });
   } catch (err) {
