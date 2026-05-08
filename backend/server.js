@@ -20,10 +20,10 @@ const start = async () => {
     await mongoose.connect(
       "mongodb+srv://firdoshalam7996_db_user:RY5X7eRfEVga88rt@socialmediaapp.gxxwc3x.mongodb.net/socialMediaDB"
     );
-    console.log("✅ MongoDB connected");
+    console.log("MongoDB connected");
 
     app.listen(9090, () => {
-      console.log("🚀 Server is running on port 9090");
+      console.log("Server is running on port 9090");
     });
   } catch (err) {
     console.error("MongoDB connection error:", err.message);

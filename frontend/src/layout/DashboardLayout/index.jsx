@@ -11,11 +11,13 @@ export default function ({ children }) {
   const authState = useSelector((state)=> state.auth);
 
   useEffect(() => {
-    if (localStorage.getItem("token") === null) {
+    const token = localStorage.getItem("token");
+    if(!token){
       router.push("/login");
+      return;
     }
     dispatch(setTokenIsThere());
-  });
+  },[]);
 
   return (
     <div>

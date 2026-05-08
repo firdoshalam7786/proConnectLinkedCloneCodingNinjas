@@ -8,14 +8,14 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",   // 🔥 bundler -> node
+    "moduleResolution": "node",  
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",               // 🔥 baseUrl add
+    "baseUrl": ".",               
     "paths": {
-      "@/*": ["src/*"]            // ✅ src se alias
+      "@/*": ["src/*"]           
     }
   },
   "include": [
@@ -23,7 +23,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
-    "**/*.jsx",                   // 🔥 saare JS/JSX cover
+    "**/*.jsx",                  
     "src"
   ],
   "exclude": ["node_modules"]
