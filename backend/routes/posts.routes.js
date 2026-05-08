@@ -23,7 +23,7 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-
+// Routers
 router.route("/").get(activeCheck);
 router.route("/post").post(upload.single("media"), createPost);
 router.route("/posts").get(getAllPosts);
