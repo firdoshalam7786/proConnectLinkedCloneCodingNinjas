@@ -8,9 +8,6 @@ Built to help users connect, share posts, and interact in a clean and responsive
 ## 🌐 Live Demo
 🔗 https://pro-connect-linked-clone-coding-nin.vercel.app/
 
-## 💻 GitHub Repository
-🔗 https://github.com/firdoshalam7786/proConnectLinkedCloneCodingNinjas
-
 ---
 
 # ✨ Features
@@ -42,6 +39,52 @@ Built to help users connect, share posts, and interact in a clean and responsive
 
 ### Authentication
 - JWT (JSON Web Token)
+
+---
+
+# Project Structure
+# 📁 Project Structure
+
+proConnectLinkedCloneCodingNinjas/
+│
+├── backend/
+│   │
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   ├── api.http
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+│
+├── frontend/
+│   │
+│   ├── .next/
+│   ├── node_modules/
+│   ├── public/
+│   │   └── images/
+│   │
+│   ├── src/
+│   │   │
+│   │   ├── components/
+│   │   ├── config/
+│   │   ├── layout/
+│   │   ├── pages/
+│   │   └── styles/
+│   │
+│   ├── vercel.json
+│   ├── eslint.config.mjs
+│   ├── next-env.d.ts
+│   ├── next.config.ts
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── README.md
+│   └── tsconfig.json
+│
+├── .env
+├── .gitignore
+└── README.md
 
 ---
 
