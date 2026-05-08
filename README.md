@@ -45,6 +45,9 @@ Built to help users connect, share posts, and interact in a clean and responsive
 # Project Structure
 # 📁 Project Structure
 
+# 📁 Project Structure
+
+```bash
 proConnectLinkedCloneCodingNinjas/
 │
 ├── backend/
@@ -85,8 +88,7 @@ proConnectLinkedCloneCodingNinjas/
 ├── .env
 ├── .gitignore
 └── README.md
-
----
+```
 
 # 📂 Project Setup
 
